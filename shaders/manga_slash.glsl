@@ -75,11 +75,12 @@ float waterRipple(vec2 p, vec2 center, float time, float intensity) {
     return max(0.0, ripple * intensity);
 }
 
-const vec3 WATER_BLUE = vec3(0.3, 0.7, 1.0); // Clear water blue
-const vec3 WATER_WHITE = vec3(0.8, 0.9, 1.0); // Water foam white
-const vec3 DEEP_BLUE = vec3(0.1, 0.4, 0.8); // Deep water blue
-const vec3 CURSOR_COLOR = vec3(0.6, 0.8, 1.0); // Soft blue cursor
-const float DURATION = 0.4; // Gentle fade
+const vec3 WATER_BLUE = vec3(0.157, 0.157, 0.157); // Clear water blue
+const vec3 WATER_WHITE = vec3(0.157, 0.157, 0.157); // Water foam white
+const vec3 DEEP_BLUE = vec3(0.157, 0.157, 0.157); // Deep water blue
+const vec3 CURSOR_COLOR = vec3(0.922, 0.467, 0.408); // Soft blue cursor
+
+const float DURATION = 0.02; // Gentle fade
 
 void mainImage(out vec4 fragColor, in vec2 fragCoord)
 {
